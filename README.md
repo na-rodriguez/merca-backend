@@ -1,6 +1,6 @@
-# To create mysql table contact
-# client field was created in order to have only 1 database
-# and not 2 databeses (porstgres and mysql) like exercise said
+**To create mysql table contact**
+*client field was created in order to have only 1 database*
+*and not 2 databeses (porstgres and mysql) like exercise said*
 CREATE TABLE `contact` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(200) NOT NULL,
@@ -9,23 +9,23 @@ CREATE TABLE `contact` (
   PRIMARY KEY (`id`)
 );
 
-# To run dev environment
-npm install //just first time
+**To run dev environment**
+*npm install //just first time*
 npm start
 
-# Create contacts(POST). Login first. Note: is working with this error: 
-# Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
-# that crash the application but the data is stored at the database (you can confirm that with get contacts service),
-# just run again the aplication and will continue working
+**Create contacts(POST). Login first. Note: is working with this error:**
+*Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client*
+*that crash the application but the data is stored at the database (you can confirm that with get contacts service),*
+*just run again the aplication and will continue working*
 http://localhost:3000/api/contacts/
 
-# Get contacts
+**Get contacts**
 URL/api/contacts/
 
-# Login
+**Login**
 URL/api/contacts/login
 
-# Varibles needed at .env file:
+**Varibles needed at .env file:**
 PORT
 
 MYSQL_HOST
